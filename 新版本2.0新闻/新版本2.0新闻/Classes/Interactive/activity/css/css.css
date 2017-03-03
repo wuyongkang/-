@@ -1,0 +1,62 @@
+/*公共*/
+body {-webkit-font-smoothing:none; font-family: "微软雅黑"; color: #444; font-size: 12px; line-height: 20px; text-align: left; background-color: #f4f3f3;  }
+html, body, div, span, ul, li, ol, dl, dt, dd, table, td, th, p, fieldset, form, pre, blockquote, h1, h2, h3, h4, h5, h6, input, img, a { margin: 0; padding: 0; -webkit-font-smoothing:none}
+ol li { list-style: none; }
+ul li { list-style: none; }
+h2{ font-size:12px; }
+img { border: none; }
+a{color: #000000;}
+a:link { color: #444; text-decoration: none; }
+a:visited { color: #444; text-decoration: none; }
+a:hover { color: #f6d75c; text-decoration: none; }
+
+/*activity*/
+section.activity{
+	width: 92%;
+	font-family: "黑体";
+	margin: 45px auto 0 auto;
+	font-size:16px;
+}
+section.activity h2{
+	font-size:20px;
+	font-weight: 100;
+	margin: 15px 0;
+}
+section.activity p{
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 8px;
+}
+
+
+/*activity*/
+@media screen and (min-width: 375px) and (max-width:413px) {
+	
+	/*activity*/
+	
+	section.activity h2{
+		font-size:22px;
+		margin: 18px 0;
+	}
+	section.activity p{
+		font-size: 18px;
+		line-height: 26px;
+		margin-bottom: 10px;
+	}
+}
+@media screen and (min-width: 414px) and (max-width:768px) {
+	
+	/*activity*/
+	
+	section.activity h2{
+		font-size:24px;
+		margin: 20px 0;
+	}
+	section.activity p{
+		font-size: 20px;
+		line-height: 28px;
+		margin-bottom: 12px;
+	}
+}
+
+

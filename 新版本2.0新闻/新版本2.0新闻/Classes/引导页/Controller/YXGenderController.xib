@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YXGenderController">
+            <connections>
+                <outlet property="menBtn" destination="FhL-KZ-KTb" id="Cey-5M-twA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="womenBtn" destination="3Rt-RC-1Zw" id="0QR-zA-ppV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" alpha="0.75" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diban" translatesAutoresizingMaskIntoConstraints="NO" id="pw6-yd-Ach">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FhL-KZ-KTb">
+                    <rect key="frame" x="32" y="183" width="139.5" height="150"/>
+                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="1Dp-DS-bPa"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="men"/>
+                    <state key="selected" backgroundImage="selectMen"/>
+                    <connections>
+                        <action selector="menBtnClick:" destination="-1" eventType="touchUpInside" id="4bF-0D-6DY"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Rt-RC-1Zw">
+                    <rect key="frame" x="203.5" y="183" width="139.5" height="150"/>
+                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" backgroundImage="women"/>
+                    <state key="selected" backgroundImage="selectWomen"/>
+                    <connections>
+                        <action selector="womenBtnClick:" destination="-1" eventType="touchUpInside" id="Rlv-ih-ExJ"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您是？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fmJ-MN-hix">
+                    <rect key="frame" x="146" y="100" width="83" height="33"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="男生" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gae-J7-FZy">
+                    <rect key="frame" x="79" y="353" width="45" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="女生" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Cr-YE-Ycw">
+                    <rect key="frame" x="251" y="353" width="45" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b28-HH-2UO">
+                    <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                    <color key="backgroundColor" red="0.1019607843" green="0.63137254899999995" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="F9l-sT-bml"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="开始你新的世界吧">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="startBtnClick:" destination="-1" eventType="touchUpInside" id="TPk-Ln-4Jr"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="3Rt-RC-1Zw" firstAttribute="height" secondItem="FhL-KZ-KTb" secondAttribute="height" id="61T-BH-E3W"/>
+                <constraint firstAttribute="bottom" secondItem="b28-HH-2UO" secondAttribute="bottom" id="6hX-yX-Pf7"/>
+                <constraint firstItem="gae-J7-FZy" firstAttribute="centerX" secondItem="FhL-KZ-KTb" secondAttribute="centerX" id="DFx-xG-ohZ"/>
+                <constraint firstItem="3Rt-RC-1Zw" firstAttribute="width" secondItem="FhL-KZ-KTb" secondAttribute="width" id="EkD-6b-Zc6"/>
+                <constraint firstItem="pw6-yd-Ach" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="FfJ-1D-HE7"/>
+                <constraint firstItem="2Cr-YE-Ycw" firstAttribute="centerX" secondItem="3Rt-RC-1Zw" secondAttribute="centerX" id="HD4-Vk-6vW"/>
+                <constraint firstAttribute="trailing" secondItem="pw6-yd-Ach" secondAttribute="trailing" id="HLF-pY-oh2"/>
+                <constraint firstItem="3Rt-RC-1Zw" firstAttribute="leading" secondItem="FhL-KZ-KTb" secondAttribute="trailing" constant="32" id="KOC-yT-xvn"/>
+                <constraint firstAttribute="trailing" secondItem="b28-HH-2UO" secondAttribute="trailing" id="Lq6-2F-arA"/>
+                <constraint firstAttribute="trailing" secondItem="3Rt-RC-1Zw" secondAttribute="trailing" constant="32" id="QFm-Wj-GLJ"/>
+                <constraint firstItem="2Cr-YE-Ycw" firstAttribute="top" secondItem="3Rt-RC-1Zw" secondAttribute="bottom" constant="20" id="RCp-tT-OIn"/>
+                <constraint firstItem="fmJ-MN-hix" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="S6M-ud-KPC"/>
+                <constraint firstItem="FhL-KZ-KTb" firstAttribute="top" secondItem="fmJ-MN-hix" secondAttribute="bottom" constant="50" id="STM-7l-Yom"/>
+                <constraint firstItem="pw6-yd-Ach" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Sio-RN-hpT"/>
+                <constraint firstItem="3Rt-RC-1Zw" firstAttribute="top" secondItem="FhL-KZ-KTb" secondAttribute="top" id="cUC-dL-cGY"/>
+                <constraint firstItem="3Rt-RC-1Zw" firstAttribute="leading" secondItem="FhL-KZ-KTb" secondAttribute="trailing" constant="32" id="doj-gf-ztb"/>
+                <constraint firstItem="FhL-KZ-KTb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="32" id="m7W-56-nps"/>
+                <constraint firstItem="gae-J7-FZy" firstAttribute="top" secondItem="FhL-KZ-KTb" secondAttribute="bottom" constant="20" id="mxB-Ps-vae"/>
+                <constraint firstItem="fmJ-MN-hix" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="pkL-rh-zK6"/>
+                <constraint firstAttribute="bottom" secondItem="pw6-yd-Ach" secondAttribute="bottom" id="qqr-fR-fdw"/>
+                <constraint firstItem="b28-HH-2UO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="quj-cv-47G"/>
+            </constraints>
+            <point key="canvasLocation" x="37.5" y="79.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="diban" width="375" height="614"/>
+        <image name="men" width="137" height="137"/>
+        <image name="selectMen" width="140" height="140"/>
+        <image name="selectWomen" width="140" height="140"/>
+        <image name="women" width="137" height="137"/>
+    </resources>
+</document>

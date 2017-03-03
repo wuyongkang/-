@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="YX_IntertractBottomV">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="okj-AH-qgF">
+                    <rect key="frame" x="330" y="0.0" width="45" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="Ap9-91-vGl"/>
+                    </constraints>
+                    <state key="normal" image="fenxiang1"/>
+                    <connections>
+                        <action selector="shareBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="e9S-zr-FiD"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXK-Td-Fjf">
+                    <rect key="frame" x="285" y="0.0" width="45" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="WeJ-bO-nh2"/>
+                    </constraints>
+                    <state key="normal" image="instructions"/>
+                    <connections>
+                        <action selector="CollectionBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="JtI-f0-5u9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xDo-AT-CYD">
+                    <rect key="frame" x="10" y="0.0" width="45" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="gMC-wv-eye"/>
+                    </constraints>
+                    <state key="normal" image="dakai"/>
+                    <state key="selected" image="guanbi"/>
+                    <connections>
+                        <action selector="danMuClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="p2O-KC-21r"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fua-wc-Ed9">
+                    <rect key="frame" x="60" y="10" width="225" height="41"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <connections>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="uAN-GH-jUC"/>
+                    </connections>
+                </textView>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r9x-4I-kfc">
+                    <rect key="frame" x="60" y="51" width="225" height="1"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="vSh-5g-d7r"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.92549019610000005" green="0.92549019610000005" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gXK-Td-Fjf" firstAttribute="leading" secondItem="fua-wc-Ed9" secondAttribute="trailing" id="2gI-zd-Ygw"/>
+                <constraint firstItem="okj-AH-qgF" firstAttribute="leading" secondItem="gXK-Td-Fjf" secondAttribute="trailing" id="2w8-aa-qk8"/>
+                <constraint firstAttribute="bottom" secondItem="fua-wc-Ed9" secondAttribute="bottom" constant="5" id="397-i0-182"/>
+                <constraint firstAttribute="bottom" secondItem="xDo-AT-CYD" secondAttribute="bottom" id="9gQ-jS-1AT"/>
+                <constraint firstItem="gXK-Td-Fjf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ICI-AI-C7V"/>
+                <constraint firstAttribute="bottom" secondItem="okj-AH-qgF" secondAttribute="bottom" id="Mh6-1J-xYS"/>
+                <constraint firstItem="xDo-AT-CYD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="On7-uG-Xqd"/>
+                <constraint firstItem="fua-wc-Ed9" firstAttribute="leading" secondItem="xDo-AT-CYD" secondAttribute="trailing" constant="5" id="Qeq-w8-S6G"/>
+                <constraint firstItem="fua-wc-Ed9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="SX4-eT-yA7"/>
+                <constraint firstItem="r9x-4I-kfc" firstAttribute="trailing" secondItem="fua-wc-Ed9" secondAttribute="trailing" id="X7f-x8-ST2"/>
+                <constraint firstItem="okj-AH-qgF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="a88-Ve-VYH"/>
+                <constraint firstItem="gXK-Td-Fjf" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="bmW-pG-KK0"/>
+                <constraint firstAttribute="trailing" secondItem="okj-AH-qgF" secondAttribute="trailing" id="cfV-Mx-py9"/>
+                <constraint firstItem="r9x-4I-kfc" firstAttribute="leading" secondItem="fua-wc-Ed9" secondAttribute="leading" id="iK3-LP-BBO"/>
+                <constraint firstItem="r9x-4I-kfc" firstAttribute="top" secondItem="fua-wc-Ed9" secondAttribute="bottom" id="jaP-UR-SZR"/>
+                <constraint firstItem="xDo-AT-CYD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="jjg-Wl-bTy"/>
+                <constraint firstAttribute="bottom" secondItem="gXK-Td-Fjf" secondAttribute="bottom" id="o9b-6d-NGr"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="danmuBtn" destination="xDo-AT-CYD" id="9Sq-Xa-Dmf"/>
+                <outlet property="inputTextField" destination="fua-wc-Ed9" id="HAg-jx-rap"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="-253"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="dakai" width="29" height="23"/>
+        <image name="fenxiang1" width="24" height="23"/>
+        <image name="guanbi" width="29" height="23"/>
+        <image name="instructions" width="23" height="23"/>
+    </resources>
+</document>

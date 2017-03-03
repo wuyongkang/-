@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GenderView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CbC-sX-Ki6">
+                    <rect key="frame" x="16" y="163" width="182.5" height="150"/>
+                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="男">
+                        <color key="titleColor" red="0.17020257580000001" green="1" blue="0.88080651060000004" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zvu-d3-n3q">
+                    <rect key="frame" x="215.5" y="163" width="182.5" height="150"/>
+                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="x45-Ge-ARS"/>
+                    </constraints>
+                    <state key="normal" title="女">
+                        <color key="titleColor" red="0.17020257580000001" green="1" blue="0.88080651060000004" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qIe-ea-TV3">
+                    <rect key="frame" x="0.0" y="676" width="414" height="60"/>
+                    <color key="backgroundColor" red="0.17020257580000001" green="1" blue="0.88080651060000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="5u3-Ok-PYs"/>
+                    </constraints>
+                    <state key="normal" title="选择开始你的生活"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Zvu-d3-n3q" firstAttribute="leading" secondItem="CbC-sX-Ki6" secondAttribute="trailing" constant="17" id="7MZ-dr-2wt"/>
+                <constraint firstItem="Zvu-d3-n3q" firstAttribute="width" secondItem="CbC-sX-Ki6" secondAttribute="width" id="8Fh-9E-fzK"/>
+                <constraint firstAttribute="trailing" secondItem="Zvu-d3-n3q" secondAttribute="trailing" constant="16" id="Bbj-Pc-VPU"/>
+                <constraint firstItem="Zvu-d3-n3q" firstAttribute="height" secondItem="CbC-sX-Ki6" secondAttribute="height" id="H8e-XD-HFP"/>
+                <constraint firstItem="CbC-sX-Ki6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="UsY-1k-deM"/>
+                <constraint firstItem="CbC-sX-Ki6" firstAttribute="top" secondItem="Zvu-d3-n3q" secondAttribute="top" id="ZXu-7W-yYC"/>
+                <constraint firstItem="CbC-sX-Ki6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="163" id="bw8-tg-sDc"/>
+                <constraint firstAttribute="bottom" secondItem="qIe-ea-TV3" secondAttribute="bottom" id="djb-Fv-O3d"/>
+                <constraint firstItem="qIe-ea-TV3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="mUs-Tg-zCw"/>
+                <constraint firstAttribute="trailing" secondItem="qIe-ea-TV3" secondAttribute="trailing" id="nz6-j3-2li"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

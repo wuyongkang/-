@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="YKBottomView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbI-qn-96z">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                    <state key="normal" title="选择你的生活方式"/>
+                    <connections>
+                        <action selector="clickBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="wdF-sS-yzU"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.17020257579443354" green="1" blue="0.88080651055554882" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="dbI-qn-96z" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="0LB-Bg-Ia6"/>
+                <constraint firstAttribute="trailing" secondItem="dbI-qn-96z" secondAttribute="trailing" id="26S-Qi-BtD"/>
+                <constraint firstAttribute="bottom" secondItem="dbI-qn-96z" secondAttribute="bottom" id="O7t-3y-Otu"/>
+                <constraint firstItem="dbI-qn-96z" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ad8-1L-6BM"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btn" destination="dbI-qn-96z" id="dFa-mO-1eW"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="152"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="oD8-Oq-N5o" customClass="YX_IntrectChildComBottomView">
+            <rect key="frame" x="0.0" y="0.0" width="420" height="49"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sbr-c2-f51">
+                    <rect key="frame" x="16" y="10" width="388" height="34"/>
+                    <color key="backgroundColor" red="0.92549019610000005" green="0.92549019610000005" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <connections>
+                        <outlet property="delegate" destination="oD8-Oq-N5o" id="Hcj-YC-C39"/>
+                    </connections>
+                </textView>
+                <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ylV-gb-KgB">
+                    <rect key="frame" x="16" y="44" width="388" height="1"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="dTV-hg-ucC"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ylV-gb-KgB" firstAttribute="leading" secondItem="oD8-Oq-N5o" secondAttribute="leading" constant="16" id="2Un-gj-8ZT"/>
+                <constraint firstItem="ylV-gb-KgB" firstAttribute="top" secondItem="sbr-c2-f51" secondAttribute="bottom" id="8yZ-nY-3LI"/>
+                <constraint firstAttribute="trailing" secondItem="sbr-c2-f51" secondAttribute="trailing" constant="16" id="Eok-Gm-Tiz"/>
+                <constraint firstItem="sbr-c2-f51" firstAttribute="top" secondItem="oD8-Oq-N5o" secondAttribute="top" constant="10" id="awD-HH-Or2"/>
+                <constraint firstItem="sbr-c2-f51" firstAttribute="leading" secondItem="oD8-Oq-N5o" secondAttribute="leading" constant="16" id="gRF-vu-3Wl"/>
+                <constraint firstAttribute="trailing" secondItem="ylV-gb-KgB" secondAttribute="trailing" constant="16" id="gkE-YN-ROj"/>
+                <constraint firstAttribute="bottom" secondItem="sbr-c2-f51" secondAttribute="bottom" constant="5" id="wRS-f4-2yX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="CommentTextView" destination="sbr-c2-f51" id="k6I-DM-9oS"/>
+            </connections>
+            <point key="canvasLocation" x="-173" y="-246.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,99 @@
+//
+//  YXNewsPrefixHeader.pch
+//  新版本2.0新闻
+//
+//  Created by 李元喜 on 16/12/12.
+//  Copyright © 2016年 广州伊秀科技有限公司. All rights reserved.
+//
+
+#ifndef YXNewsPrefixHeader_pch
+#define YXNewsPrefixHeader_pch
+
+#define APP_W   self.view.frame.size.width
+#define APP_H   self.view.frame.size.height
+
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+
+#define YXNewsURL @"http://test-newsapi.yxlady.com/v2/"   //线上
+//#define YXUrl @"http://health-testapi.yxlady.com" //测试
+
+//动画弹框视图
+#import "ShareView.h"
+#import "UIViewController+BAAlertView.h"//提示框
+
+//四个Tabbar
+#import "OneModulesViewController.h"
+#import "TwoModulesViewController.h"
+#import "ThreeModulesViewController.h"
+#import "FourModulesViewController.h"
+
+//MJ请求
+#import <AFNetworking.h>
+#import <UIImageView+WebCache.h>
+//MJ刷新
+#import <MJRefresh.h>
+#import <Masonry.h>
+//提示框
+#import "NSObject+BAProgressHUD.h"
+/*
+ [self showProgress:@"正在加载..."];
+ [self hideProgress];
+ [self showAlert:dict[@"msg"]];
+
+
+ 
+ */
+//用户登录
+#import "UUID.h"
+/*保存信息*/
+#import "YXUser.h"
+#import "YXDataUser+saveUser.h"
+#import "YXDataUser.h"
+
+ //时间
+#import "timeStamp.h"
+
+
+#import "YXMacro.h"
+#import "YXConst.h"
+#import "Header.h"
+////友盟
+//#import <TencentOpenAPI/TencentOAuth.h>
+//#import <TencentOpenAPI/QQApiInterface.h>
+//#import "UMSocialSinaHandler.h"
+//#import "UMSocialWechatHandler.h"
+//#import "UMSocialQQHandler.h"
+#import <UMSocialCore/UMSocialCore.h>
+//DEBUG 模式下打印日志
+#ifdef DEBUG
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...)
+#endif
+
+// 获取RGB颜色
+#define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+#define RGB(r,g,b) RGBA(r,g,b,1.0f)
+
+#define ThemeColor RGB(230, 198, 168)
+#define RandomColor RGB((arc4random() % 256),(arc4random() % 256),(arc4random() % 256))
+
+//判断手机型号
+#define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define IS_RETINA ([[UIScreen mainScreen] scale] >= 2.0)
+
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+
+#define SCREEN_MAX_LENGTH (MAX(SCREEN_WIDTH, SCREEN_HEIGHT))
+#define SCREEN_MIN_LENGTH (MIN(SCREEN_WIDTH, SCREEN_HEIGHT))
+
+#define isIPhone4S (IS_IPHONE && SCREEN_MAX_LENGTH < 568.0)
+#define isIPhone5 (IS_IPHONE && SCREEN_MAX_LENGTH == 568.0)
+#define isIPhone6 (IS_IPHONE && SCREEN_MAX_LENGTH == 667.0)
+#define isIPhone6plus (IS_IPHONE && SCREEN_MAX_LENGTH >= 736.0)
+
+
+#endif /* YXNewsPrefixHeader_pch */
